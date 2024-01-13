@@ -44,6 +44,7 @@ func main() {
 		return c.JSON(http.StatusOK, pI)
 		// return c.String(http.StatusOK, fmt.Sprintf("%v", pI))
 	})
+	e.Static("/photo", "E:\\go\\src\\rental_property\\property_photos")
 
 	// Start the server
 	e.Logger.Fatal(e.Start(":8088")) // Listen on port
